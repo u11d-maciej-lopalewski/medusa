@@ -19,10 +19,11 @@ Before proceeding, ensure you have the following:
 
 ## Setting Up the Storefront Repository
 
-1. Clone the [`medusa-starter`](https://github.com/u11d-com/medusa-starter) repository to your local machine:
+1. Clone the [`medusa-starter`](https://github.com/u11d-com/medusa-starter/tree/v1) repository to your local machine:
    ```bash
    git clone https://github.com/u11d-com/medusa-starter.git
    cd medusa-starter
+   git checkout -b v1 origin/v1
    ```
 
 2. Navigate to the `storefront` directory and initialize the repository, this sets up the storefront based on the [Medusa Next.js starter template](https://github.com/medusajs/nextjs-starter-medusa) for version 1:

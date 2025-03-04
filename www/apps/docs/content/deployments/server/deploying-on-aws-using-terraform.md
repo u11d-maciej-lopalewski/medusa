@@ -39,7 +39,7 @@ When designing the Terraform module for Medusa, we prioritized scalability, secu
 Key architectural decisions include:
 - Use of Managed Services: All core components — such as Amazon RDS for PostgreSQL, Amazon ElastiCache for Redis, and the Application Load Balancer (ALB) — are fully managed services. This eliminates the need for teams to handle infrastructure maintenance tasks like patching, backups, and scaling operations.
 - Containerization with AWS Fargate: We run Medusa services as ECS tasks on AWS Fargate, removing the need for Kubernetes cluster management. Teams can focus on defining scaling policies without worrying about the underlying infrastructure.
-- Optimized Docker Images: The Terraform module is complemented by Docker image definitions (provided as Dockerfiles in a separate [repository](https://github.com/u11d-com/medusa-starter)). These images follow best practices for security, performance, and minimal size, ensuring efficient resource utilization in production environments.
+- Optimized Docker Images: The Terraform module is complemented by Docker image definitions (provided as Dockerfiles in a separate [repository](https://github.com/u11d-com/medusa-starter/tree/v1)). These images follow best practices for security, performance, and minimal size, ensuring efficient resource utilization in production environments.
 
 By leveraging managed services, this architecture reduces the time, effort, and expertise required to maintain infrastructure. It provides the flexibility to control scalability while ensuring high availability, robust security, and optimal performance — allowing development teams to concentrate on delivering business value through their e-commerce platforms.
 
@@ -179,7 +179,7 @@ terraform destroy
 ---
 
 ## Next Steps
-- Learn how to set up Medusa locally using the [medusa-starter repository](https://github.com/u11d-com/medusa-starter).
+- Learn how to set up Medusa locally using the [medusa-starter repository](https://github.com/u11d-com/medusa-starter/tree/v1).
 - Explore the Medusa starter templates:
   - [Backend Starter Template](https://github.com/medusajs/medusa-starter-default).
   - [Frontend Starter Template](https://github.com/medusajs/nextjs-starter-medusa).
@@ -201,7 +201,7 @@ For a detailed step-by-step guide on building, pushing, and configuring the stor
 ## FAQs
 
 ### Can I use this for local development?
-No, you can use the [medusa-starter repository](https://github.com/u11d-com/medusa-starter) to set up Medusa locally.
+No, you can use the [medusa-starter repository](https://github.com/u11d-com/medusa-starter/tree/v1) to set up Medusa locally.
 
 ### How do I update the infrastructure?
 Modify the Terraform configuration files and run `terraform apply` to apply the changes.
